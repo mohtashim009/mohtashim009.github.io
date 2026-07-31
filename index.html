@@ -8,15 +8,19 @@
 <meta name="theme-color" content="#080808" />
 <meta name="author" content="K Mohtashim Jamal" />
 <link rel="canonical" href="https://mohtashim009.github.io/" />
-
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="K Mohtashim Jamal | AI Engineer | Full Stack Developer" />
 <meta property="og:description" content="AI Engineer and Full Stack Developer specializing in Generative AI, Agentic AI, Machine Learning, Android Development, Next.js, Python and Gemini API." />
 <meta property="og:url" content="https://mohtashim009.github.io/" />
-<meta property="og:image" content="https://mohtashim009.github.io/photo.jpg" />
+<meta property="og:image" content="https://mohtashim009.github.io/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="K Mohtashim Jamal | AI Engineer Portfolio" />
 <meta name="twitter:card" content="summary_large_image" />
-
+<meta name="twitter:image" content="https://mohtashim009.github.io/og-image.png" />
+<meta name="twitter:image:alt" content="K Mohtashim Jamal | AI Engineer Portfolio" />
+  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -36,7 +40,7 @@
   "@type": "Person",
   "name": "K Mohtashim Jamal",
   "url": "https://mohtashim009.github.io/",
-  "image": "https://mohtashim009.github.io/photo.jpg",
+  "image": "https://mohtashim009.github.io/og-image.png",
   "email": "mailto:mohtashimjamal009@gmail.com",
   "telephone": "+91-9916191965",
   "jobTitle": "AI/ML Engineer & Full-Stack Developer",
@@ -77,25 +81,6 @@
   .hero-name { line-height: 0.82; letter-spacing:-0.045em; word-break: break-word; }
   .ticker { border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); }
 
-  @media print {
-    @page { size: A4; margin: 14mm; }
-    html, body { background:#fff !important; color:#000 !important; overflow: visible !important; }
-    body { font-family:'IBM Plex Mono', monospace; font-size:10.5pt; line-height:1.35; }
-    .grain::before, .cursor-dot, .no-print, header nav, #hero-photo, #contact-cta, #ticker-strip { display:none !important; }
-    .reveal { opacity:1 !important; transform:none !important; }
-    a { color:#000 !important; text-decoration:none !important; }
-    .print-only { display:block !important; }
-    section { break-inside: avoid; page-break-inside: avoid; padding: 8px 0 !important; border:none !important; }
-    h1,h2,h3 { color:#000 !important; }
-    .print-h1 { font-family:'Instrument Serif', serif; font-size:26pt; line-height:1; margin:0; letter-spacing:-0.02em; }
-    .print-sub { font-family:'IBM Plex Mono', monospace; font-size:9pt; color:#333 !important; margin-top:4px; }
-    .print-section-label { font-family:'IBM Plex Mono', monospace; font-size:8pt; letter-spacing:.2em; text-transform:uppercase; color:#666 !important; border-bottom:1px solid #000; padding-bottom:3px; margin:12px 0 6px; }
-    .print-role { font-family:'Instrument Serif', serif; font-size:13pt; }
-    .print-meta { font-family:'IBM Plex Mono', monospace; font-size:9pt; color:#333 !important; }
-    ul.print-list { padding-left:16px; } ul.print-list li { list-style: disc; margin-bottom:2px; }
-    .hairline { border-color:#bbb !important; } * { box-shadow: none !important; }
-  }
-  .print-only { display: none; }
   @media (prefers-reduced-motion: reduce){ *,::before,::after { animation:none !important; transition:none !important; } .marquee-track { animation:none !important; } }
 </style>
 </head>
@@ -116,7 +101,7 @@
       <li><a href="#credentials" class="hover:text-volt transition-colors" data-cursor="link">Credentials</a></li>
       <li><a href="#contact" class="hover:text-volt transition-colors" data-cursor="link">Contact</a></li>
     </ul>
-    <a href="resume.pdf" download class="hidden sm:inline-flex items-center gap-2 px-3 md:px-4 py-2 border hairline hover:border-volt hover:text-volt transition-colors font-mono text-[10px] md:text-[11px] tracking-[0.2em] uppercase" data-cursor="link">Download CV <span aria-hidden="true">↓</span></a>
+    <a href="K_Mohtashim_Jamal_Resume.pdf" download class="hidden sm:inline-flex items-center gap-2 px-3 md:px-4 py-2 border hairline hover:border-volt hover:text-volt transition-colors font-mono text-[10px] md:text-[11px] tracking-[0.2em] uppercase" data-cursor="link">Download Resume <span aria-hidden="true">↓</span></a>
   </nav>
 </header>
 
@@ -129,7 +114,7 @@
         <span class="inline-block w-1.5 h-1.5 bg-volt rounded-full animate-pulse"></span>
         <span>Available · Q2 2026 · Bengaluru / Remote</span>
       </div>
-      <div class="text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-ash">Portfolio № 001 &nbsp;/&nbsp; Rev. 2026.01</div>
+      <div class="text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-ash"> Portfolio Edition · 2026 </div>
     </div>
 
     <aside class="col-span-12 md:col-span-3 order-2 md:order-1 mt-8 md:mt-16 reveal">
@@ -159,15 +144,14 @@
       </p>
       <div class="mt-8 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">
         <a href="#work" class="group inline-flex items-center gap-2 md:gap-3 border hairline hover:border-volt px-4 md:px-5 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase text-bone hover:text-volt transition-colors" data-cursor="link">See selected work <span aria-hidden="true">→</span></a>
-        <a href="resume.pdf" download class="inline-flex items-center gap-2 md:gap-3 bg-volt text-black px-4 md:px-5 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase hover:bg-voltDim transition-colors" data-cursor="link">Download résumé <span aria-hidden="true">↓</span></a>
-        <button onclick="window.print()" class="inline-flex items-center gap-2 md:gap-3 border hairline hover:border-volt px-4 md:px-5 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase text-bone hover:text-volt transition-colors" data-cursor="link">Print one-pager <span aria-hidden="true">⎙</span></button>
+        <a href="K_Mohtashim_Jamal_Resume.pdf" download class="inline-flex items-center gap-2 md:gap-3 bg-volt text-black px-4 md:px-5 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase hover:bg-voltDim transition-colors" data-cursor="link">Download Resume <span aria-hidden="true">↓</span></a>
       </div>
     </div>
 
     <aside id="hero-photo" class="col-span-12 md:col-span-3 order-3 mt-8 md:mt-16 reveal">
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-4">02 / Portrait</div>
       <figure class="border hairline p-3 max-w-[220px] md:max-w-[240px] md:ml-auto">
-        <img src="photo.jpg" alt="Portrait of K Mohtashim Jamal — AI/ML Engineer, Bengaluru" class="badge-img w-full aspect-[3/4] object-cover" data-cursor="link" />
+        <img src="photo.jpg" loading="lazy" decoding="async" alt="Portrait of K Mohtashim Jamal — AI/ML Engineer, Bengaluru" class="badge-img w-full aspect-[3/4] object-cover" data-cursor="link" />
         <figcaption class="mt-3 flex items-center justify-between text-[10px] tracking-[0.22em] uppercase text-ash">
           <span>ID · MJ-0009</span><span class="text-volt">● LIVE</span>
         </figcaption>
@@ -435,63 +419,14 @@
     <aside id="contact-cta" class="col-span-12 md:col-span-5 md:pl-12 reveal mt-10 md:mt-0">
       <div class="border hairline p-5 md:p-8 md:sticky md:top-28">
         <div class="text-[10px] tracking-[0.24em] uppercase text-ash">Résumé Kit</div>
-        <p class="mt-4 text-smoke text-[13.5px] leading-relaxed">Grab the full CV, or print a one-pager formatted for A4 — perfect for a coffee-chat handoff.</p>
+        <p class="mt-4 text-smoke text-[13.5px] leading-relaxed">Download the latest résumé — concise, recruiter-ready, and updated with my recent projects and experience.</p>
         <div class="mt-6 flex flex-col gap-3">
-          <a href="resume.pdf" download class="inline-flex items-center justify-between gap-4 bg-volt text-black px-5 py-4 text-[11px] md:text-[12px] tracking-[0.22em] uppercase hover:bg-voltDim transition-colors" data-cursor="link"><span>Download résumé (PDF)</span><span aria-hidden="true">↓</span></a>
-          <button onclick="window.print()" class="inline-flex items-center justify-between gap-4 border hairline hover:border-volt hover:text-volt px-5 py-4 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link"><span>Print one-pager</span><span aria-hidden="true">⎙</span></button>
+          <a href="K_Mohtashim_Jamal_Resume.pdf" download class="inline-flex items-center justify-between gap-4 bg-volt text-black px-5 py-4 text-[11px] md:text-[12px] tracking-[0.22em] uppercase hover:bg-voltDim transition-colors" data-cursor="link"><span>Download Resume (PDF)</span><span aria-hidden="true">↓</span></a>
           <a href="mailto:mohtashimjamal009@gmail.com?subject=Opportunity%20for%20K%20Mohtashim%20Jamal" class="inline-flex items-center justify-between gap-4 border hairline hover:border-volt hover:text-volt px-5 py-4 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link"><span>Start a conversation</span><span aria-hidden="true">→</span></a>
         </div>
         <div class="mt-8 text-[10px] tracking-[0.22em] uppercase text-ash">Response time · &lt; 24h</div>
       </div>
     </aside>
-  </div>
-</section>
-
-<section class="print-only">
-  <div style="text-align:left;">
-    <h1 class="print-h1">K Mohtashim Jamal</h1>
-    <div class="print-sub">AI / ML Engineer · Full-Stack · Android · Bengaluru, IN</div>
-    <div class="print-sub">mohtashimjamal009@gmail.com · +91 9916191965 · linkedin.com/in/mohtashimjamal009 · github.com/mohtashim009</div>
-    <div class="print-section-label">Summary</div>
-    <div>AI &amp; ML Engineer and Full-Stack Developer with internship experience shipping production-grade applications across Generative AI, Computer Vision and web/mobile. Builds agentic GenAI pipelines (Gemini, Mastra AI) with React/Next.js and Flask, plus native Android (Kotlin, Jetpack Compose).</div>
-    <div class="print-section-label">Experience</div>
-    <div class="print-role">Android Developer Intern · MindMatrix / VTU Virtual Internship <span class="print-meta">— Feb 2026 – May 2026</span></div>
-    <ul class="print-list">
-      <li>Architected KreedaPrerana, a native Android app (Kotlin, Jetpack Compose, MVVM) for sports talent scouting.</li>
-      <li>Offline-first Room data layer with Hilt DI and cascading FKs across athletes, trials, benchmarks, badges.</li>
-      <li>Batch trial-entry workflow with a custom nanosecond-precision chronometer and rule-based badge engine.</li>
-      <li>Dynamic leaderboards &amp; trend visualisations (MPAndroidChart, Kotlin Flow); pluggable Gemini insights adapter. Rated "Excellent".</li>
-    </ul>
-    <div class="print-section-label">Selected Projects</div>
-    <div class="print-role">Intelligent Research Assistant with Mastra AI <span class="print-meta">— Best Paper Award, KNSIT Symposium</span></div>
-    <ul class="print-list">
-      <li>Built the Next.js/TypeScript frontend; led agent orchestration using the Mastra AI framework.</li>
-      <li>Search-integration layer connecting Perplexity AI (web) and SerpAPI (Google Scholar).</li>
-      <li>Co-built Gemini summarisation pipeline + TF-IDF ranking for article normalisation.</li>
-      <li>Repo: github.com/mohtashim009/Intelligent-Research-Assistant · Stack: Next.js, TypeScript, Mastra AI, Perplexity, SerpAPI, Gemini, TF-IDF.</li>
-    </ul>
-    <div class="print-role">KreedaPrerana — AI-Assisted Sports Talent Scouting App</div>
-    <ul class="print-list"><li>Repo: github.com/mohtashim009/KreedaPreranaScout</li></ul>
-    <div class="print-section-label">Education</div>
-    <div class="print-role">B.E., Artificial Intelligence &amp; Machine Learning — KNS Institute of Technology, Bengaluru <span class="print-meta">2022 – 2026 · CGPA 8.34/10.0</span></div>
-    <div class="print-meta">Relevant Coursework: DSA, Deep Learning, Natural Language Processing, Database Management Systems.</div>
-    <div class="print-section-label">Technical Skills</div>
-    <ul class="print-list">
-      <li><b>Languages:</b> Python, Kotlin, TypeScript, JavaScript, HTML</li>
-      <li><b>AI/ML &amp; GenAI:</b> Machine Learning, Deep Learning, NLP, TensorFlow, Keras, NumPy, Gemini API, Mastra AI, TF-IDF, Perplexity AI API, SerpAPI</li>
-      <li><b>Full-Stack:</b> Next.js, React, Node.js, Flask, REST API Design, Tailwind CSS</li>
-      <li><b>Mobile:</b> Jetpack Compose, MVVM, Room, Hilt, Coroutines &amp; Flow</li>
-      <li><b>Tools:</b> Git, GitHub, Vercel, Docker (basic), Android Studio, MPAndroidChart</li>
-    </ul>
-    <div class="print-section-label">Certifications &amp; Awards</div>
-    <ul class="print-list">
-      <li>Best Paper Award — KNSIT Symposium (Intelligent Research Assistant with Mastra AI)</li>
-      <li>Introduction to Machine Learning — NPTEL, IIT Madras</li>
-      <li>Cloud Computing — NPTEL, IIT Kharagpur</li>
-      <li>AI: Search Methods for Problem Solving — VTU CoE / IIT Madras</li>
-      <li>Data Analytics with Python — VTU CoE</li>
-      <li>GPU Architectures and Programming — VTU CoE</li>
-    </ul>
   </div>
 </section>
 
