@@ -3,9 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>K Mohtashim Jamal — AI/ML Engineer × Full-Stack × Android</title>
-<meta name="description" content="Portfolio of K Mohtashim Jamal — AI/ML Engineer and Full-Stack Developer building agentic GenAI systems, native Android apps, and web platforms." />
+<title>K Mohtashim Jamal | AI Engineer | Machine Learning | Full Stack Developer | Android Developer</title>
+<meta name="description" content="AI Engineer and Full Stack Developer specializing in Generative AI, Agentic AI, Machine Learning, Android Development, Next.js, Python and Gemini API. Portfolio featuring award-winning AI projects and production-ready applications." />
 <meta name="theme-color" content="#080808" />
+<meta name="author" content="K Mohtashim Jamal" />
+<link rel="canonical" href="https://mohtashim009.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="K Mohtashim Jamal | AI Engineer | Full Stack Developer" />
+<meta property="og:description" content="AI Engineer and Full Stack Developer specializing in Generative AI, Agentic AI, Machine Learning, Android Development, Next.js, Python and Gemini API." />
+<meta property="og:url" content="https://mohtashim009.github.io/" />
+<meta property="og:image" content="https://mohtashim009.github.io/photo.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,26 +23,33 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          volt: '#D4FF00',
-          voltDim: '#B2D700',
-          archival: '#080808',
-          panel: '#121212',
-          bone: '#F4F4F0',
-          smoke: '#A1A1AA',
-          ash: '#52525B',
-          hairline: 'rgba(255,255,255,0.10)',
-        },
-        fontFamily: {
-          serif: ['"Instrument Serif"', 'ui-serif', 'Georgia', 'serif'],
-          mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
-        },
-      }
-    }
-  }
+  tailwind.config = { theme: { extend: {
+    colors: { volt:'#D4FF00', voltDim:'#B2D700', archival:'#080808', panel:'#121212', bone:'#F4F4F0', smoke:'#A1A1AA', ash:'#52525B', hairline:'rgba(255,255,255,0.10)' },
+    fontFamily: { serif:['"Instrument Serif"','ui-serif','Georgia','serif'], mono:['"IBM Plex Mono"','ui-monospace','monospace'] }
+  }}}
+</script>
+
+<!-- JSON-LD Person Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "K Mohtashim Jamal",
+  "url": "https://mohtashim009.github.io/",
+  "image": "https://mohtashim009.github.io/photo.jpg",
+  "email": "mailto:mohtashimjamal009@gmail.com",
+  "telephone": "+91-9916191965",
+  "jobTitle": "AI/ML Engineer & Full-Stack Developer",
+  "description": "AI Engineer and Full Stack Developer specializing in Generative AI, Agentic AI, Machine Learning, Android Development, Next.js, Python and Gemini API.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "KNS Institute of Technology, Bengaluru" },
+  "knowsAbout": ["Artificial Intelligence","Machine Learning","Generative AI","Agentic AI","Gemini API","Mastra AI","Next.js","TypeScript","Python","Flask","Kotlin","Jetpack Compose","Android Development","Full-Stack Development","Deep Learning","Natural Language Processing"],
+  "sameAs": [
+    "https://github.com/mohtashim009",
+    "https://linkedin.com/in/mohtashimjamal009"
+  ],
+  "award": "Best Paper Award, KNSIT Project Symposium — Intelligent Research Assistant with Mastra AI"
+}
 </script>
 
 <style>
@@ -40,109 +57,89 @@
   html { scroll-behavior: smooth; }
   body { background: var(--archival); color: var(--bone); font-family:'IBM Plex Mono', ui-monospace, monospace; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
   ::selection { background: var(--volt); color: #000; }
-
-  .grain::before{
-    content:""; position:fixed; inset:0; z-index:60; pointer-events:none;
+  .grain::before{ content:""; position:fixed; inset:0; z-index:60; pointer-events:none;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.9'/></svg>");
-    mix-blend-mode: overlay; opacity: .12;
-  }
-
-  .cursor-dot { position: fixed; top:0; left:0; width:8px; height:8px; border-radius:9999px; background:var(--volt); z-index:70; pointer-events:none; transform: translate(-50%,-50%); transition: transform .18s ease, background-color .18s ease, mix-blend-mode .18s; will-change: transform; }
+    mix-blend-mode: overlay; opacity: .12; }
+  .cursor-dot { position: fixed; top:0; left:0; width:8px; height:8px; border-radius:9999px; background:var(--volt); z-index:70; pointer-events:none; transform: translate(-50%,-50%); transition: transform .18s ease; will-change: transform; }
   .cursor-dot.expand { transform: translate(-50%,-50%) scale(3.2); mix-blend-mode: difference; background:#fff; }
   @media (hover: none) { .cursor-dot { display:none; } }
-
   .reveal { opacity:0; transform: translateY(28px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
   .reveal.in { opacity:1; transform:none; }
-
   a:focus-visible, button:focus-visible { outline:2px solid var(--volt); outline-offset:4px; border-radius:2px; }
-
   .hairline { border-color: var(--hair); }
-
   @keyframes marquee { from { transform: translateX(0);} to { transform: translateX(-50%);} }
   .marquee-track { animation: marquee 40s linear infinite; }
   .marquee-track:hover { animation-play-state: paused; }
-
   .skill-row { transition: background-color .25s ease, padding .25s ease; }
   .skill-row:hover { background: rgba(212,255,0,0.06); padding-left: 14px; }
-
   .badge-img { filter: grayscale(100%) contrast(1.05); transition: filter .5s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
   .badge-img:hover { filter: grayscale(0%); transform: scale(1.02); }
-
-  .hero-name { line-height: 0.82; letter-spacing:-0.045em; }
-
+  .hero-name { line-height: 0.82; letter-spacing:-0.045em; word-break: break-word; }
   .ticker { border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); }
 
   @media print {
     @page { size: A4; margin: 14mm; }
     html, body { background:#fff !important; color:#000 !important; overflow: visible !important; }
-    body { font-family: 'IBM Plex Mono', monospace; font-size: 10.5pt; line-height:1.35; }
-    .grain::before, .cursor-dot, .no-print, header nav, #hero-photo, #contact-cta, #ticker-strip, #marquee-strip { display:none !important; }
+    body { font-family:'IBM Plex Mono', monospace; font-size:10.5pt; line-height:1.35; }
+    .grain::before, .cursor-dot, .no-print, header nav, #hero-photo, #contact-cta, #ticker-strip { display:none !important; }
     .reveal { opacity:1 !important; transform:none !important; }
-    a { color:#000 !important; text-decoration: none !important; }
+    a { color:#000 !important; text-decoration:none !important; }
     .print-only { display:block !important; }
     section { break-inside: avoid; page-break-inside: avoid; padding: 8px 0 !important; border:none !important; }
-    h1, h2, h3 { color:#000 !important; }
-    .print-h1 { font-family:'Instrument Serif', serif; font-size: 26pt; line-height:1; margin:0; letter-spacing:-0.02em; }
-    .print-sub { font-family:'IBM Plex Mono', monospace; font-size: 9pt; color:#333 !important; margin-top:4px; }
-    .print-section-label { font-family:'IBM Plex Mono', monospace; font-size: 8pt; letter-spacing:.2em; text-transform:uppercase; color:#666 !important; border-bottom:1px solid #000; padding-bottom:3px; margin: 12px 0 6px; }
-    .print-role { font-family:'Instrument Serif', serif; font-size: 13pt; }
-    .print-meta { font-family:'IBM Plex Mono', monospace; font-size: 9pt; color:#333 !important; }
-    ul.print-list { padding-left: 16px; }
-    ul.print-list li { list-style: disc; margin-bottom: 2px; }
-    .skill-cell, .cert-item { border-color:#ccc !important; }
-    .hairline { border-color:#bbb !important; }
-    * { box-shadow: none !important; }
+    h1,h2,h3 { color:#000 !important; }
+    .print-h1 { font-family:'Instrument Serif', serif; font-size:26pt; line-height:1; margin:0; letter-spacing:-0.02em; }
+    .print-sub { font-family:'IBM Plex Mono', monospace; font-size:9pt; color:#333 !important; margin-top:4px; }
+    .print-section-label { font-family:'IBM Plex Mono', monospace; font-size:8pt; letter-spacing:.2em; text-transform:uppercase; color:#666 !important; border-bottom:1px solid #000; padding-bottom:3px; margin:12px 0 6px; }
+    .print-role { font-family:'Instrument Serif', serif; font-size:13pt; }
+    .print-meta { font-family:'IBM Plex Mono', monospace; font-size:9pt; color:#333 !important; }
+    ul.print-list { padding-left:16px; } ul.print-list li { list-style: disc; margin-bottom:2px; }
+    .hairline { border-color:#bbb !important; } * { box-shadow: none !important; }
   }
   .print-only { display: none; }
-
-  @media (prefers-reduced-motion: reduce){
-    *, ::before, ::after { animation: none !important; transition: none !important; }
-    .marquee-track { animation: none !important; }
-  }
+  @media (prefers-reduced-motion: reduce){ *,::before,::after { animation:none !important; transition:none !important; } .marquee-track { animation:none !important; } }
 </style>
 </head>
 
 <body class="grain font-mono">
-
 <div class="cursor-dot" id="cursor" aria-hidden="true"></div>
 
 <header class="sticky top-0 z-50 backdrop-blur-md bg-archival/70 border-b hairline no-print">
-  <nav class="max-w-[90rem] mx-auto flex items-center justify-between px-6 md:px-12 py-5">
+  <nav class="max-w-[90rem] mx-auto flex items-center justify-between px-5 md:px-12 py-4 md:py-5">
     <a href="#top" class="flex items-center gap-3 group" data-cursor="link">
       <span class="inline-block w-2 h-2 bg-volt rounded-full group-hover:scale-125 transition-transform"></span>
-      <span class="font-mono text-[13px] tracking-[0.15em] text-smoke group-hover:text-bone transition-colors">K.M.J <span class="text-ash">/ INDEX</span></span>
+      <span class="font-mono text-[12px] md:text-[13px] tracking-[0.15em] text-smoke group-hover:text-bone transition-colors">K.M.J <span class="text-ash">/ INDEX</span></span>
     </a>
     <ul class="hidden md:flex items-center gap-8 font-mono text-[12px] tracking-[0.18em] uppercase text-smoke">
       <li><a href="#work" class="hover:text-volt transition-colors" data-cursor="link">Work</a></li>
       <li><a href="#skills" class="hover:text-volt transition-colors" data-cursor="link">Stack</a></li>
-      <li><a href="#experience" class="hover:text-volt transition-colors" data-cursor="link">Résumé</a></li>
+      <li><a href="#experience" class="hover:text-volt transition-colors" data-cursor="link">Experience</a></li>
       <li><a href="#credentials" class="hover:text-volt transition-colors" data-cursor="link">Credentials</a></li>
       <li><a href="#contact" class="hover:text-volt transition-colors" data-cursor="link">Contact</a></li>
     </ul>
-    <a href="resume.pdf" download class="hidden sm:inline-flex items-center gap-2 px-4 py-2 border hairline hover:border-volt hover:text-volt transition-colors font-mono text-[11px] tracking-[0.2em] uppercase" data-cursor="link">Download CV <span aria-hidden="true">↓</span></a>
+    <a href="resume.pdf" download class="hidden sm:inline-flex items-center gap-2 px-3 md:px-4 py-2 border hairline hover:border-volt hover:text-volt transition-colors font-mono text-[10px] md:text-[11px] tracking-[0.2em] uppercase" data-cursor="link">Download CV <span aria-hidden="true">↓</span></a>
   </nav>
 </header>
 
-<main id="top" class="max-w-[90rem] mx-auto px-6 md:px-12">
+<main id="top" class="max-w-[90rem] mx-auto px-5 md:px-12">
 
-<section id="hero" class="min-h-[92vh] pt-16 md:pt-24 pb-20 relative">
+<section id="hero" class="min-h-[92vh] pt-12 md:pt-24 pb-20 relative">
   <div class="grid grid-cols-12 gap-4 md:gap-8">
     <div class="col-span-12 flex flex-wrap items-center justify-between gap-3 border-b hairline pb-5 reveal">
-      <div class="flex items-center gap-3 text-[11px] tracking-[0.24em] uppercase text-smoke">
+      <div class="flex items-center gap-3 text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-smoke">
         <span class="inline-block w-1.5 h-1.5 bg-volt rounded-full animate-pulse"></span>
         <span>Available · Q2 2026 · Bengaluru / Remote</span>
       </div>
-      <div class="text-[11px] tracking-[0.24em] uppercase text-ash">Portfolio № 001 &nbsp;/&nbsp; Rev. 2026.01</div>
+      <div class="text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-ash">Portfolio № 001 &nbsp;/&nbsp; Rev. 2026.01</div>
     </div>
 
     <aside class="col-span-12 md:col-span-3 order-2 md:order-1 mt-8 md:mt-16 reveal">
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-4">01 / Subject</div>
       <div class="space-y-2 text-smoke text-[13px]">
-        <div class="flex gap-3"><span class="text-ash w-16">Role</span><span class="text-bone">AI/ML Engineer</span></div>
-        <div class="flex gap-3"><span class="text-ash w-16">Also</span><span class="text-bone">Full-Stack · Android</span></div>
-        <div class="flex gap-3"><span class="text-ash w-16">Base</span><span class="text-bone">Bengaluru, IN</span></div>
-        <div class="flex gap-3"><span class="text-ash w-16">Year</span><span class="text-bone">B.E. AI &amp; ML · 2026</span></div>
-        <div class="flex gap-3"><span class="text-ash w-16">GPA</span><span class="text-bone">8.34 / 10.0</span></div>
+        <div class="flex gap-3"><span class="text-ash w-16 shrink-0">Role</span><span class="text-bone">AI/ML Engineer</span></div>
+        <div class="flex gap-3"><span class="text-ash w-16 shrink-0">Also</span><span class="text-bone">Full-Stack · Android</span></div>
+        <div class="flex gap-3"><span class="text-ash w-16 shrink-0">Base</span><span class="text-bone">Bengaluru, IN</span></div>
+        <div class="flex gap-3"><span class="text-ash w-16 shrink-0">Year</span><span class="text-bone">B.E. AI &amp; ML · 2026</span></div>
+        <div class="flex gap-3"><span class="text-ash w-16 shrink-0">GPA</span><span class="text-bone">8.34 / 10.0</span></div>
       </div>
       <div class="mt-10 grid grid-cols-2 gap-2 max-w-[280px]">
         <span class="border hairline px-3 py-2 text-[10px] tracking-[0.22em] uppercase text-bone text-center">[ AI / ML ]</span>
@@ -153,114 +150,97 @@
     </aside>
 
     <div class="col-span-12 md:col-span-6 order-1 md:order-2 flex flex-col justify-center reveal">
-      <h1 class="font-serif text-bone hero-name text-[64px] sm:text-[92px] md:text-[128px] lg:text-[168px]">
+      <h1 class="font-serif text-bone hero-name text-[44px] xs:text-[52px] sm:text-[84px] md:text-[120px] lg:text-[160px]">
         K MOHTASHIM<br />
-        <span class="italic pl-8 md:pl-16 inline-block">Jamal.</span>
+        <span class="italic pl-6 md:pl-16 inline-block">Jamal.</span>
       </h1>
-      <p class="mt-8 md:mt-12 max-w-xl text-smoke text-[14px] md:text-[15px] leading-relaxed">
+      <p class="mt-6 md:mt-10 max-w-xl text-smoke text-[13.5px] md:text-[15px] leading-relaxed">
         I build <span class="text-bone">agentic GenAI systems</span>, ship <span class="text-bone">production full-stack</span> apps, and craft <span class="text-bone">native Android</span> — end-to-end. A young engineer with an internship track record of taking ideas from whiteboard to deployment, with tools like <span class="text-volt">Gemini</span>, <span class="text-volt">Mastra AI</span>, <span class="text-volt">Next.js</span> and <span class="text-volt">Jetpack Compose</span>.
       </p>
-      <div class="mt-10 flex flex-wrap items-center gap-4">
-        <a href="#work" class="group inline-flex items-center gap-3 border hairline hover:border-volt px-5 py-3 text-[12px] tracking-[0.22em] uppercase text-bone hover:text-volt transition-colors" data-cursor="link">See selected work <span class="group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span></a>
-        <a href="resume.pdf" download class="group inline-flex items-center gap-3 bg-volt text-black px-5 py-3 text-[12px] tracking-[0.22em] uppercase hover:bg-voltDim transition-colors" data-cursor="link">Download résumé <span aria-hidden="true">↓</span></a>
-        <button onclick="window.print()" class="group inline-flex items-center gap-3 border hairline hover:border-volt px-5 py-3 text-[12px] tracking-[0.22em] uppercase text-bone hover:text-volt transition-colors" data-cursor="link">Print one-pager <span aria-hidden="true">⎙</span></button>
+      <div class="mt-8 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">
+        <a href="#work" class="group inline-flex items-center gap-2 md:gap-3 border hairline hover:border-volt px-4 md:px-5 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase text-bone hover:text-volt transition-colors" data-cursor="link">See selected work <span aria-hidden="true">→</span></a>
+        <a href="resume.pdf" download class="inline-flex items-center gap-2 md:gap-3 bg-volt text-black px-4 md:px-5 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase hover:bg-voltDim transition-colors" data-cursor="link">Download résumé <span aria-hidden="true">↓</span></a>
+        <button onclick="window.print()" class="inline-flex items-center gap-2 md:gap-3 border hairline hover:border-volt px-4 md:px-5 py-3 text-[11px] md:text-[12px] tracking-[0.2em] uppercase text-bone hover:text-volt transition-colors" data-cursor="link">Print one-pager <span aria-hidden="true">⎙</span></button>
       </div>
     </div>
 
     <aside id="hero-photo" class="col-span-12 md:col-span-3 order-3 mt-8 md:mt-16 reveal">
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-4">02 / Portrait</div>
-      <figure class="border hairline p-3 max-w-[240px] md:ml-auto">
-        <img src="photo.jpg" alt="Portrait of K Mohtashim Jamal" class="badge-img w-full aspect-[3/4] object-cover" data-cursor="link" />
+      <figure class="border hairline p-3 max-w-[220px] md:max-w-[240px] md:ml-auto">
+        <img src="photo.jpg" alt="Portrait of K Mohtashim Jamal — AI/ML Engineer, Bengaluru" class="badge-img w-full aspect-[3/4] object-cover" data-cursor="link" />
         <figcaption class="mt-3 flex items-center justify-between text-[10px] tracking-[0.22em] uppercase text-ash">
-          <span>ID · MJ-0009</span>
-          <span class="text-volt">● LIVE</span>
+          <span>ID · MJ-0009</span><span class="text-volt">● LIVE</span>
         </figcaption>
       </figure>
-      <div class="mt-6 max-w-[240px] md:ml-auto text-[11px] tracking-[0.16em] uppercase text-smoke text-right">
-        <div>lat 12.9716° N</div>
-        <div>lng 77.5946° E</div>
+      <div class="mt-6 max-w-[220px] md:max-w-[240px] md:ml-auto text-[11px] tracking-[0.16em] uppercase text-smoke text-right">
+        <div>lat 12.9716° N</div><div>lng 77.5946° E</div>
       </div>
     </aside>
   </div>
 </section>
 
-<section id="ticker-strip" class="ticker py-5 -mx-6 md:-mx-12 overflow-hidden no-print">
+<section id="ticker-strip" class="ticker py-5 -mx-5 md:-mx-12 overflow-hidden no-print">
   <div class="flex whitespace-nowrap marquee-track">
-    <div class="flex items-center gap-10 pr-10 text-[13px] tracking-[0.28em] uppercase">
-      <span class="text-bone">Gemini API</span><span class="text-ash">✦</span>
-      <span class="text-bone">Mastra AI</span><span class="text-ash">✦</span>
-      <span class="text-bone">Next.js · TypeScript</span><span class="text-ash">✦</span>
-      <span class="text-bone">Jetpack Compose</span><span class="text-ash">✦</span>
-      <span class="text-bone">Kotlin · MVVM</span><span class="text-ash">✦</span>
-      <span class="text-bone">Flask · REST</span><span class="text-ash">✦</span>
-      <span class="text-bone">TensorFlow · Keras</span><span class="text-ash">✦</span>
-      <span class="text-bone">NLP · TF-IDF</span><span class="text-ash">✦</span>
-      <span class="text-bone">Room · Hilt</span><span class="text-ash">✦</span>
-      <span class="text-bone">Perplexity · SerpAPI</span><span class="text-ash">✦</span>
-      <span class="text-bone">Docker</span><span class="text-ash">✦</span>
-      <span class="text-bone">Vercel</span><span class="text-ash">✦</span>
+    <div class="flex items-center gap-8 md:gap-10 pr-10 text-[12px] md:text-[13px] tracking-[0.28em] uppercase">
+      <span class="text-bone">Gemini API</span><span class="text-ash">✦</span><span class="text-bone">Mastra AI</span><span class="text-ash">✦</span><span class="text-bone">Next.js · TypeScript</span><span class="text-ash">✦</span><span class="text-bone">Jetpack Compose</span><span class="text-ash">✦</span><span class="text-bone">Kotlin · MVVM</span><span class="text-ash">✦</span><span class="text-bone">Flask · REST</span><span class="text-ash">✦</span><span class="text-bone">TensorFlow · Keras</span><span class="text-ash">✦</span><span class="text-bone">NLP · TF-IDF</span><span class="text-ash">✦</span><span class="text-bone">Room · Hilt</span><span class="text-ash">✦</span><span class="text-bone">Perplexity · SerpAPI</span><span class="text-ash">✦</span>
     </div>
-    <div aria-hidden="true" class="flex items-center gap-10 pr-10 text-[13px] tracking-[0.28em] uppercase">
-      <span class="text-bone">Gemini API</span><span class="text-ash">✦</span>
-      <span class="text-bone">Mastra AI</span><span class="text-ash">✦</span>
-      <span class="text-bone">Next.js · TypeScript</span><span class="text-ash">✦</span>
-      <span class="text-bone">Jetpack Compose</span><span class="text-ash">✦</span>
-      <span class="text-bone">Kotlin · MVVM</span><span class="text-ash">✦</span>
-      <span class="text-bone">Flask · REST</span><span class="text-ash">✦</span>
-      <span class="text-bone">TensorFlow · Keras</span><span class="text-ash">✦</span>
-      <span class="text-bone">NLP · TF-IDF</span><span class="text-ash">✦</span>
-      <span class="text-bone">Room · Hilt</span><span class="text-ash">✦</span>
-      <span class="text-bone">Perplexity · SerpAPI</span><span class="text-ash">✦</span>
-      <span class="text-bone">Docker</span><span class="text-ash">✦</span>
-      <span class="text-bone">Vercel</span><span class="text-ash">✦</span>
+    <div aria-hidden="true" class="flex items-center gap-8 md:gap-10 pr-10 text-[12px] md:text-[13px] tracking-[0.28em] uppercase">
+      <span class="text-bone">Gemini API</span><span class="text-ash">✦</span><span class="text-bone">Mastra AI</span><span class="text-ash">✦</span><span class="text-bone">Next.js · TypeScript</span><span class="text-ash">✦</span><span class="text-bone">Jetpack Compose</span><span class="text-ash">✦</span><span class="text-bone">Kotlin · MVVM</span><span class="text-ash">✦</span><span class="text-bone">Flask · REST</span><span class="text-ash">✦</span><span class="text-bone">TensorFlow · Keras</span><span class="text-ash">✦</span><span class="text-bone">NLP · TF-IDF</span><span class="text-ash">✦</span><span class="text-bone">Room · Hilt</span><span class="text-ash">✦</span><span class="text-bone">Perplexity · SerpAPI</span><span class="text-ash">✦</span>
     </div>
   </div>
 </section>
 
-<section id="about" class="py-24 md:py-32 border-t hairline">
+<section id="about" class="py-20 md:py-32 border-t hairline">
   <div class="grid grid-cols-12 gap-4 md:gap-8">
     <div class="col-span-12 md:col-span-4 reveal">
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-6">03 / Background</div>
-      <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-[0.95] text-bone">
-        Whiteboard <span class="italic">to</span> deployment —<br/>
-        <span class="italic text-smoke">without the hand-off tax.</span>
-      </h2>
+      <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-[0.95] text-bone">Whiteboard <span class="italic">to</span> deployment —<br/><span class="italic text-smoke">without the hand-off tax.</span></h2>
       <p class="mt-6 text-smoke text-[13px]">Filed under: builder, tinkerer, reads-the-docs.</p>
     </div>
     <div class="col-span-12 md:col-span-8 md:pl-12 md:border-l hairline reveal">
-      <p class="font-serif text-2xl md:text-3xl lg:text-[34px] leading-[1.25] text-bone">
-        I'm an <span class="italic">AI &amp; Machine Learning engineer</span> and <span class="italic">full-stack developer</span> with hands-on internship experience shipping production-grade apps across
-        <span class="border-b border-volt">Generative AI</span>,
-        <span class="border-b border-volt">Computer Vision</span>,
-        and <span class="border-b border-volt">web / mobile</span> platforms.
-      </p>
+      <p class="font-serif text-2xl md:text-3xl lg:text-[34px] leading-[1.25] text-bone">I'm an <span class="italic">AI &amp; Machine Learning engineer</span> and <span class="italic">full-stack developer</span> with hands-on internship experience shipping production-grade apps across <span class="border-b border-volt">Generative AI</span>, <span class="border-b border-volt">Computer Vision</span>, and <span class="border-b border-volt">web / mobile</span> platforms.</p>
       <div class="mt-8 grid md:grid-cols-2 gap-6 text-[13px] leading-relaxed text-smoke">
         <p>I like the messy middle — the part where <span class="text-bone">agent orchestration</span> meets <span class="text-bone">API rate limits</span>, where a Jetpack Compose UI needs to speak to a <span class="text-bone">Room</span> schema with cascading foreign keys, where <span class="text-bone">TF-IDF</span> and an LLM summariser have to agree on what "relevant" means.</p>
         <p>Strong software fundamentals, opinionated about DX, allergic to hand-wavy demos. Track record of shipping <span class="text-bone">full-stack, mobile,</span> and <span class="text-bone">computer-vision</span> solutions <span class="text-bone">end-to-end</span> — and rated "Excellent" by my most recent internship coordinators.</p>
       </div>
       <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-px bg-hairline border hairline">
-        <div class="bg-archival p-5"><div class="font-serif text-4xl text-bone">8.34</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">CGPA / 10</div></div>
-        <div class="bg-archival p-5"><div class="font-serif text-4xl text-bone">2×</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">Flagship projects</div></div>
-        <div class="bg-archival p-5"><div class="font-serif text-4xl text-volt">01</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">Best paper award</div></div>
-        <div class="bg-archival p-5"><div class="font-serif text-4xl text-bone">05</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">Certifications</div></div>
+        <div class="bg-archival p-4 md:p-5"><div class="font-serif text-3xl md:text-4xl text-bone">8.34</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">CGPA / 10</div></div>
+        <div class="bg-archival p-4 md:p-5"><div class="font-serif text-3xl md:text-4xl text-bone">2×</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">Flagship projects</div></div>
+        <div class="bg-archival p-4 md:p-5"><div class="font-serif text-3xl md:text-4xl text-volt">01</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">Best paper award</div></div>
+        <div class="bg-archival p-4 md:p-5"><div class="font-serif text-3xl md:text-4xl text-bone">05</div><div class="mt-1 text-[10px] tracking-[0.22em] uppercase text-smoke">Certifications</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="work" class="py-24 md:py-32 border-t hairline">
-  <div class="flex items-end justify-between mb-16 reveal">
+<!-- TESTIMONIAL -->
+<section id="testimonial" class="py-16 md:py-24 border-t hairline">
+  <div class="grid grid-cols-12 gap-4 md:gap-8 reveal">
+    <div class="col-span-12 md:col-span-2">
+      <div class="text-[11px] tracking-[0.24em] uppercase text-volt">Quote</div>
+    </div>
+    <blockquote class="col-span-12 md:col-span-10">
+      <div class="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.1] text-bone">
+        <span class="text-volt">“</span>Rated <span class="italic">Excellent</span> — architected an offline-first Android app with a rule-based badge engine and a pluggable Gemini insights layer.<span class="text-volt">”</span>
+      </div>
+      <footer class="mt-6 text-[11px] tracking-[0.22em] uppercase text-smoke">— Internship Coordinators, MindMatrix · VTU Virtual Internship Program</footer>
+    </blockquote>
+  </div>
+</section>
+
+<section id="work" class="py-20 md:py-32 border-t hairline">
+  <div class="flex items-end justify-between mb-12 md:mb-16 reveal">
     <div>
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-4">04 / Selected Work</div>
-      <h2 class="font-serif text-5xl md:text-7xl leading-[0.95] text-bone">Two builds I'm <span class="italic">proud of.</span></h2>
+      <h2 class="font-serif text-4xl md:text-7xl leading-[0.95] text-bone">Two builds I'm <span class="italic">proud of.</span></h2>
     </div>
     <div class="hidden md:block text-[11px] tracking-[0.22em] uppercase text-ash">2025 → 2026</div>
   </div>
 
-  <article class="grid grid-cols-12 gap-4 md:gap-8 py-12 border-t hairline reveal">
+  <article class="grid grid-cols-12 gap-4 md:gap-8 py-10 md:py-12 border-t hairline reveal">
     <div class="col-span-12 md:col-span-5">
       <div class="text-[10px] tracking-[0.24em] uppercase text-ash">Project 01 · GenAI Agentic Systems</div>
-      <h3 class="mt-4 font-serif text-4xl md:text-5xl leading-[1] text-bone">Intelligent Research <span class="italic">Assistant</span></h3>
+      <h3 class="mt-4 font-serif text-3xl md:text-5xl leading-[1] text-bone">Intelligent Research <span class="italic">Assistant</span></h3>
       <p class="mt-3 text-[12px] tracking-[0.18em] uppercase text-volt">★ Best Paper Award · KNSIT Symposium</p>
       <p class="mt-6 text-smoke text-[13.5px] leading-relaxed">Agent-based research assistant that automates academic literature reviews. Built with a 4-person team; I owned the <span class="text-bone">Next.js/TypeScript</span> frontend and led <span class="text-bone">Mastra AI</span> agent orchestration.</p>
       <ul class="mt-6 space-y-3 text-[13px] text-smoke list-none leading-relaxed">
@@ -269,61 +249,57 @@
         <li class="pl-5 relative"><span class="absolute left-0 top-0 text-volt">→</span>Coordinated agent hand-offs so retrieval, ranking and summarisation compose into a single research artefact.</li>
       </ul>
       <div class="mt-8 flex flex-wrap gap-2 text-[10px] tracking-[0.22em] uppercase">
-        <span class="border hairline px-3 py-1.5 text-smoke">Next.js</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">TypeScript</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">Mastra AI</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">Gemini</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">Perplexity</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">SerpAPI</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">TF-IDF</span>
+        <span class="border hairline px-3 py-1.5 text-smoke">Next.js</span><span class="border hairline px-3 py-1.5 text-smoke">TypeScript</span><span class="border hairline px-3 py-1.5 text-smoke">Mastra AI</span><span class="border hairline px-3 py-1.5 text-smoke">Gemini</span><span class="border hairline px-3 py-1.5 text-smoke">Perplexity</span><span class="border hairline px-3 py-1.5 text-smoke">SerpAPI</span><span class="border hairline px-3 py-1.5 text-smoke">TF-IDF</span>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="https://github.com/mohtashim009/Intelligent-Research-Assistant" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border hairline hover:border-volt hover:text-volt px-4 py-3 text-[11px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link">View on GitHub ↗</a>
       </div>
     </div>
     <div class="col-span-12 md:col-span-7 md:pl-12">
-      <div class="relative border hairline p-6 md:p-8 bg-panel h-full min-h-[360px] overflow-hidden">
+      <div class="relative border hairline p-6 md:p-8 bg-panel h-full min-h-[320px] md:min-h-[360px] overflow-hidden">
         <div class="flex items-center justify-between text-[10px] tracking-[0.22em] uppercase text-ash">
-          <span>agent-graph.log</span>
-          <span class="text-volt">● running</span>
+          <span>architecture · agentic pipeline</span><span class="text-volt">● overview</span>
         </div>
-        <pre class="mt-6 text-[11px] leading-6 text-smoke whitespace-pre overflow-hidden">
-<span class="text-volt">[00.01]</span> retrieval.agent  ▸ perplexity.search("agentic RAG survey 2025")
-<span class="text-volt">[00.02]</span> retrieval.agent  ▸ serpapi.scholar("mastra ai orchestration")
-<span class="text-volt">[00.03]</span> ranker           ▸ tf-idf(candidates=48) → shortlist(12)
-<span class="text-volt">[00.04]</span> summariser       ▸ gemini.summarise(shortlist, style="lit-review")
-<span class="text-volt">[00.05]</span> composer         ▸ compose(sections=[intro, findings, gaps])
-<span class="text-volt">[00.06]</span> exporter         ▸ artefact.md  ✓  citations.bib  ✓
-<span class="text-ash">-----</span>
-result: <span class="text-bone">12 papers · 6 clusters · 1 review draft (5,120 words)</span>
+        <pre class="mt-6 text-[11px] leading-6 text-smoke whitespace-pre-wrap">
+<span class="text-volt">retrieval</span>   ▸ Perplexity AI (web search)
+             ▸ SerpAPI (Google Scholar)
+<span class="text-volt">ranking</span>     ▸ TF-IDF normalisation across sources
+<span class="text-volt">summarise</span>   ▸ Gemini API — abstractive summarisation
+<span class="text-volt">compose</span>     ▸ Mastra AI agent orchestration
+<span class="text-volt">export</span>      ▸ Structured literature-review artefact
+
+<span class="text-ash">stack :</span> <span class="text-bone">Next.js · TypeScript · Mastra AI · Gemini · Perplexity · SerpAPI</span>
+<span class="text-ash">team  :</span> <span class="text-bone">4 engineers · owned frontend + agent orchestration</span>
         </pre>
-        <div class="absolute -bottom-16 -right-10 font-serif italic text-[220px] leading-none text-white/5 select-none">01</div>
+        <div class="absolute -bottom-16 -right-10 font-serif italic text-[180px] md:text-[220px] leading-none text-white/5 select-none">01</div>
       </div>
     </div>
   </article>
 
-  <article class="grid grid-cols-12 gap-4 md:gap-8 py-12 border-t hairline reveal">
+  <article class="grid grid-cols-12 gap-4 md:gap-8 py-10 md:py-12 border-t hairline reveal">
     <div class="col-span-12 md:col-span-7 order-2 md:order-1">
-      <div class="relative border hairline p-6 md:p-8 bg-panel h-full min-h-[360px] overflow-hidden">
+      <div class="relative border hairline p-6 md:p-8 bg-panel h-full min-h-[320px] md:min-h-[360px] overflow-hidden">
         <div class="flex items-center justify-between text-[10px] tracking-[0.22em] uppercase text-ash">
-          <span>KreedaPrerana · trial-log</span>
-          <span class="text-volt">● live</span>
+          <span>architecture · native android</span><span class="text-volt">● overview</span>
         </div>
-        <div class="mt-6 grid grid-cols-3 gap-4">
-          <div class="border hairline p-4"><div class="text-[10px] tracking-[0.22em] uppercase text-ash">40m sprint</div><div class="mt-2 font-serif text-3xl text-bone">4.82<span class="text-smoke text-base">s</span></div><div class="mt-2 text-[10px] tracking-[0.22em] uppercase text-volt">▲ Bronze</div></div>
-          <div class="border hairline p-4"><div class="text-[10px] tracking-[0.22em] uppercase text-ash">Vertical jump</div><div class="mt-2 font-serif text-3xl text-bone">58<span class="text-smoke text-base">cm</span></div><div class="mt-2 text-[10px] tracking-[0.22em] uppercase text-volt">▲ Silver</div></div>
-          <div class="border border-volt/50 p-4"><div class="text-[10px] tracking-[0.22em] uppercase text-volt">Endurance run</div><div class="mt-2 font-serif text-3xl text-volt">12'34"</div><div class="mt-2 text-[10px] tracking-[0.22em] uppercase text-volt">▲ Gold</div></div>
-        </div>
-        <pre class="mt-6 text-[11px] leading-6 text-smoke whitespace-pre overflow-hidden">
-athlete.id      = <span class="text-bone">ATH-0421</span>
-trial.batch     = <span class="text-bone">2026-01-14 · U18 · KA</span>
-chronometer     = <span class="text-bone">ns-precision (Kotlin Flow)</span>
-badge.engine    = <span class="text-bone">rule-based vs. benchmark set</span>
-ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
+        <pre class="mt-6 text-[11px] leading-6 text-smoke whitespace-pre-wrap">
+<span class="text-volt">ui</span>          ▸ Jetpack Compose · MVVM
+<span class="text-volt">data</span>        ▸ Room (offline-first) · Hilt DI
+             ▸ cascading FKs: athletes → trials → benchmarks → badges
+<span class="text-volt">chronometer</span> ▸ custom, nanosecond-precision
+<span class="text-volt">badges</span>      ▸ rule-based engine vs. benchmark datasets
+<span class="text-volt">charts</span>      ▸ MPAndroidChart + Kotlin Flow
+<span class="text-volt">ai layer</span>    ▸ pluggable Gemini insights adapter
+
+<span class="text-ash">tooling :</span> <span class="text-bone">Android Studio · Google Cloud Labs · Google AI Studio</span>
+<span class="text-ash">outcome :</span> <span class="text-bone">Rated “Excellent” by internship coordinators</span>
         </pre>
-        <div class="absolute -bottom-16 -left-8 font-serif italic text-[220px] leading-none text-white/5 select-none">02</div>
+        <div class="absolute -bottom-16 -left-8 font-serif italic text-[180px] md:text-[220px] leading-none text-white/5 select-none">02</div>
       </div>
     </div>
     <div class="col-span-12 md:col-span-5 order-1 md:order-2 md:pl-12">
       <div class="text-[10px] tracking-[0.24em] uppercase text-ash">Project 02 · Native Android · Sports-tech</div>
-      <h3 class="mt-4 font-serif text-4xl md:text-5xl leading-[1] text-bone">KreedaPrerana <span class="italic text-smoke">— talent scouting.</span></h3>
+      <h3 class="mt-4 font-serif text-3xl md:text-5xl leading-[1] text-bone">KreedaPrerana <span class="italic text-smoke">— talent scouting.</span></h3>
       <p class="mt-3 text-[12px] tracking-[0.18em] uppercase text-volt">Rated "Excellent" · MindMatrix / VTU</p>
       <p class="mt-6 text-smoke text-[13.5px] leading-relaxed">A native Android app for sports talent scouting: batch trial-entry, benchmark evaluation, live leaderboards, and pluggable LLM insights.</p>
       <ul class="mt-6 space-y-3 text-[13px] text-smoke list-none leading-relaxed">
@@ -332,81 +308,35 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
         <li class="pl-5 relative"><span class="absolute left-0 top-0 text-volt">→</span>Dynamic leaderboards &amp; trend charts (<span class="text-bone">MPAndroidChart</span>, Kotlin Flow) with a pluggable <span class="text-bone">Gemini</span> insights slot.</li>
       </ul>
       <div class="mt-8 flex flex-wrap gap-2 text-[10px] tracking-[0.22em] uppercase">
-        <span class="border hairline px-3 py-1.5 text-smoke">Kotlin</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">Jetpack Compose</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">MVVM</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">Room</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">Hilt</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">Coroutines / Flow</span>
-        <span class="border hairline px-3 py-1.5 text-smoke">MPAndroidChart</span>
+        <span class="border hairline px-3 py-1.5 text-smoke">Kotlin</span><span class="border hairline px-3 py-1.5 text-smoke">Jetpack Compose</span><span class="border hairline px-3 py-1.5 text-smoke">MVVM</span><span class="border hairline px-3 py-1.5 text-smoke">Room</span><span class="border hairline px-3 py-1.5 text-smoke">Hilt</span><span class="border hairline px-3 py-1.5 text-smoke">Coroutines / Flow</span><span class="border hairline px-3 py-1.5 text-smoke">MPAndroidChart</span>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="https://github.com/mohtashim009/KreedaPreranaScout" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border hairline hover:border-volt hover:text-volt px-4 py-3 text-[11px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link">View on GitHub ↗</a>
       </div>
     </div>
   </article>
 </section>
 
-<section id="skills" class="py-24 md:py-32 border-t hairline">
+<section id="skills" class="py-20 md:py-32 border-t hairline">
   <div class="grid grid-cols-12 gap-4 md:gap-8">
     <div class="col-span-12 md:col-span-4 reveal">
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-6">05 / Technical Stack</div>
-      <h2 class="font-serif text-5xl md:text-6xl leading-[0.95] text-bone">The <span class="italic">toolbox.</span></h2>
+      <h2 class="font-serif text-4xl md:text-6xl leading-[0.95] text-bone">The <span class="italic">toolbox.</span></h2>
       <p class="mt-6 text-smoke text-[13.5px] max-w-sm">Not a badge wall — a working set. Everything below has been used to ship something real.</p>
     </div>
     <div class="col-span-12 md:col-span-8 reveal">
-      <div class="grid md:grid-cols-2 gap-px bg-hairline border hairline">
-        <div class="bg-archival p-6 skill-cell">
-          <div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Languages</div><div class="font-serif text-2xl text-ash">/01</div></div>
-          <ul class="divide-y hairline text-[13px]">
-            <li class="skill-row py-2 flex justify-between"><span>Python</span><span class="text-ash">core</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Kotlin</span><span class="text-ash">android</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>TypeScript</span><span class="text-ash">web</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>JavaScript</span><span class="text-ash">web</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>HTML</span><span class="text-ash">web</span></li>
-          </ul>
-        </div>
-        <div class="bg-archival p-6 skill-cell">
-          <div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">AI · ML · GenAI</div><div class="font-serif text-2xl text-ash">/02</div></div>
-          <ul class="divide-y hairline text-[13px]">
-            <li class="skill-row py-2 flex justify-between"><span>Machine Learning</span><span class="text-ash">supervised</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Deep Learning</span><span class="text-ash">tf / keras</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>NLP · TF-IDF</span><span class="text-ash">retrieval</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Gemini API</span><span class="text-ash">llm</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Mastra AI</span><span class="text-ash">agents</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Perplexity · SerpAPI</span><span class="text-ash">search</span></li>
-          </ul>
-        </div>
-        <div class="bg-archival p-6 skill-cell">
-          <div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Full-Stack Web</div><div class="font-serif text-2xl text-ash">/03</div></div>
-          <ul class="divide-y hairline text-[13px]">
-            <li class="skill-row py-2 flex justify-between"><span>Next.js</span><span class="text-ash">ssr / app</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>React</span><span class="text-ash">spa</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Node.js</span><span class="text-ash">runtime</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Flask</span><span class="text-ash">python api</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>REST API Design</span><span class="text-ash">contract</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Tailwind CSS</span><span class="text-ash">ui</span></li>
-          </ul>
-        </div>
-        <div class="bg-archival p-6 skill-cell">
-          <div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Native Android</div><div class="font-serif text-2xl text-ash">/04</div></div>
-          <ul class="divide-y hairline text-[13px]">
-            <li class="skill-row py-2 flex justify-between"><span>Jetpack Compose</span><span class="text-ash">ui</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>MVVM Architecture</span><span class="text-ash">pattern</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Room</span><span class="text-ash">db</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Hilt (DI)</span><span class="text-ash">di</span></li>
-            <li class="skill-row py-2 flex justify-between"><span>Coroutines &amp; Flow</span><span class="text-ash">async</span></li>
-          </ul>
-        </div>
-        <div class="bg-archival p-6 skill-cell md:col-span-2">
-          <div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Tools · Platforms</div><div class="font-serif text-2xl text-ash">/05</div></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-hairline border hairline">
+        <div class="bg-archival p-5 md:p-6"><div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Languages</div><div class="font-serif text-2xl text-ash">/01</div></div>
+          <ul class="divide-y hairline text-[13px]"><li class="skill-row py-2 flex justify-between"><span>Python</span><span class="text-ash">core</span></li><li class="skill-row py-2 flex justify-between"><span>Kotlin</span><span class="text-ash">android</span></li><li class="skill-row py-2 flex justify-between"><span>TypeScript</span><span class="text-ash">web</span></li><li class="skill-row py-2 flex justify-between"><span>JavaScript</span><span class="text-ash">web</span></li><li class="skill-row py-2 flex justify-between"><span>HTML</span><span class="text-ash">web</span></li></ul></div>
+        <div class="bg-archival p-5 md:p-6"><div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">AI · ML · GenAI</div><div class="font-serif text-2xl text-ash">/02</div></div>
+          <ul class="divide-y hairline text-[13px]"><li class="skill-row py-2 flex justify-between"><span>Machine Learning</span><span class="text-ash">supervised</span></li><li class="skill-row py-2 flex justify-between"><span>Deep Learning</span><span class="text-ash">tf / keras</span></li><li class="skill-row py-2 flex justify-between"><span>NLP · TF-IDF</span><span class="text-ash">retrieval</span></li><li class="skill-row py-2 flex justify-between"><span>Gemini API</span><span class="text-ash">llm</span></li><li class="skill-row py-2 flex justify-between"><span>Mastra AI</span><span class="text-ash">agents</span></li><li class="skill-row py-2 flex justify-between"><span>Perplexity · SerpAPI</span><span class="text-ash">search</span></li></ul></div>
+        <div class="bg-archival p-5 md:p-6"><div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Full-Stack Web</div><div class="font-serif text-2xl text-ash">/03</div></div>
+          <ul class="divide-y hairline text-[13px]"><li class="skill-row py-2 flex justify-between"><span>Next.js</span><span class="text-ash">ssr / app</span></li><li class="skill-row py-2 flex justify-between"><span>React</span><span class="text-ash">spa</span></li><li class="skill-row py-2 flex justify-between"><span>Node.js</span><span class="text-ash">runtime</span></li><li class="skill-row py-2 flex justify-between"><span>Flask</span><span class="text-ash">python api</span></li><li class="skill-row py-2 flex justify-between"><span>REST API Design</span><span class="text-ash">contract</span></li><li class="skill-row py-2 flex justify-between"><span>Tailwind CSS</span><span class="text-ash">ui</span></li></ul></div>
+        <div class="bg-archival p-5 md:p-6"><div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Native Android</div><div class="font-serif text-2xl text-ash">/04</div></div>
+          <ul class="divide-y hairline text-[13px]"><li class="skill-row py-2 flex justify-between"><span>Jetpack Compose</span><span class="text-ash">ui</span></li><li class="skill-row py-2 flex justify-between"><span>MVVM Architecture</span><span class="text-ash">pattern</span></li><li class="skill-row py-2 flex justify-between"><span>Room</span><span class="text-ash">db</span></li><li class="skill-row py-2 flex justify-between"><span>Hilt (DI)</span><span class="text-ash">di</span></li><li class="skill-row py-2 flex justify-between"><span>Coroutines &amp; Flow</span><span class="text-ash">async</span></li></ul></div>
+        <div class="bg-archival p-5 md:p-6 md:col-span-2"><div class="flex items-center justify-between mb-4"><div class="text-[10px] tracking-[0.24em] uppercase text-volt">Tools · Platforms</div><div class="font-serif text-2xl text-ash">/05</div></div>
           <div class="flex flex-wrap gap-2 text-[11px] tracking-[0.18em] uppercase">
-            <span class="border hairline px-3 py-2 text-bone">Git</span>
-            <span class="border hairline px-3 py-2 text-bone">GitHub</span>
-            <span class="border hairline px-3 py-2 text-bone">Vercel</span>
-            <span class="border hairline px-3 py-2 text-bone">Docker (basic)</span>
-            <span class="border hairline px-3 py-2 text-bone">Android Studio</span>
-            <span class="border hairline px-3 py-2 text-bone">Google AI Studio</span>
-            <span class="border hairline px-3 py-2 text-bone">Google Cloud Labs</span>
-            <span class="border hairline px-3 py-2 text-bone">MPAndroidChart</span>
-            <span class="border hairline px-3 py-2 text-bone">NumPy</span>
+            <span class="border hairline px-3 py-2 text-bone">Git</span><span class="border hairline px-3 py-2 text-bone">GitHub</span><span class="border hairline px-3 py-2 text-bone">Vercel</span><span class="border hairline px-3 py-2 text-bone">Docker (basic)</span><span class="border hairline px-3 py-2 text-bone">Android Studio</span><span class="border hairline px-3 py-2 text-bone">Google AI Studio</span><span class="border hairline px-3 py-2 text-bone">Google Cloud Labs</span><span class="border hairline px-3 py-2 text-bone">MPAndroidChart</span><span class="border hairline px-3 py-2 text-bone">NumPy</span>
           </div>
         </div>
       </div>
@@ -414,17 +344,14 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
   </div>
 </section>
 
-<section id="experience" class="py-24 md:py-32 border-t hairline">
-  <div class="grid grid-cols-12 gap-4 md:gap-8 mb-16 reveal">
+<section id="experience" class="py-20 md:py-32 border-t hairline">
+  <div class="grid grid-cols-12 gap-4 md:gap-8 mb-12 md:mb-16 reveal">
     <div class="col-span-12 md:col-span-4">
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-6">06 / Archive</div>
-      <h2 class="font-serif text-5xl md:text-6xl leading-[0.95] text-bone">Experience <span class="italic">&amp;</span> education.</h2>
+      <h2 class="font-serif text-4xl md:text-6xl leading-[0.95] text-bone">Experience <span class="italic">&amp;</span> education.</h2>
     </div>
-    <div class="col-span-12 md:col-span-8 md:pl-12 md:border-l hairline text-[13px] text-smoke max-w-2xl">
-      <p>A short, honest timeline. Every role or program below produced a concrete artefact I can walk you through in a call.</p>
-    </div>
+    <div class="col-span-12 md:col-span-8 md:pl-12 md:border-l hairline text-[13px] text-smoke max-w-2xl"><p>A short, honest timeline. Every role or program below produced a concrete artefact I can walk you through in a call.</p></div>
   </div>
-
   <div class="grid grid-cols-12 gap-4 md:gap-8 reveal">
     <div class="col-span-12 md:col-span-6 md:pr-8 md:border-r hairline">
       <div class="text-[10px] tracking-[0.24em] uppercase text-ash mb-6">Experience</div>
@@ -436,16 +363,15 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
         <div class="mt-1 text-[12px] tracking-[0.14em] uppercase text-volt">MindMatrix · VTU Virtual Internship</div>
         <p class="mt-4 text-[13.5px] text-smoke leading-relaxed">Selected for the VTU-curriculum program <em>"Android App Development using Generative AI"</em>. Architected <span class="text-bone">KreedaPrerana</span> — a native Android app for sports talent scouting — using Android Studio, Google Cloud Labs, and Google AI Studio.</p>
         <ul class="mt-4 space-y-2 text-[13px] text-smoke">
-          <li class="flex gap-3"><span class="text-volt">·</span> Offline-first data model (Room + Hilt) with cascading FKs across athletes, trials, benchmarks and badges.</li>
-          <li class="flex gap-3"><span class="text-volt">·</span> Batch trial-entry flow with a custom ns-precision chronometer.</li>
-          <li class="flex gap-3"><span class="text-volt">·</span> Rule-based badge engine benchmarking live results against performance datasets.</li>
-          <li class="flex gap-3"><span class="text-volt">·</span> Dynamic leaderboards + trend visualisations (MPAndroidChart, Flow); pluggable Gemini insights adapter.</li>
-          <li class="flex gap-3"><span class="text-volt">·</span> Rated <span class="text-bone">"Excellent"</span> by internship coordinators.</li>
+          <li class="flex gap-3"><span class="text-volt shrink-0">·</span><span>Offline-first data model (Room + Hilt) with cascading FKs across athletes, trials, benchmarks and badges.</span></li>
+          <li class="flex gap-3"><span class="text-volt shrink-0">·</span><span>Batch trial-entry flow with a custom ns-precision chronometer.</span></li>
+          <li class="flex gap-3"><span class="text-volt shrink-0">·</span><span>Rule-based badge engine benchmarking live results against performance datasets.</span></li>
+          <li class="flex gap-3"><span class="text-volt shrink-0">·</span><span>Dynamic leaderboards + trend visualisations (MPAndroidChart, Flow); pluggable Gemini insights adapter.</span></li>
+          <li class="flex gap-3"><span class="text-volt shrink-0">·</span><span>Rated <span class="text-bone">"Excellent"</span> by internship coordinators.</span></li>
         </ul>
       </div>
     </div>
-
-    <div class="col-span-12 md:col-span-6 md:pl-8">
+    <div class="col-span-12 md:col-span-6 md:pl-8 mt-10 md:mt-0">
       <div class="text-[10px] tracking-[0.24em] uppercase text-ash mb-6">Education</div>
       <div class="relative pl-8">
         <span class="absolute left-0 top-2 w-2 h-2 bg-volt rounded-full"></span>
@@ -453,81 +379,67 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
         <div class="text-[11px] tracking-[0.24em] uppercase text-smoke">2022 — 2026</div>
         <h3 class="mt-2 font-serif text-3xl text-bone leading-tight">B.E. <span class="italic">Artificial Intelligence &amp; Machine Learning</span></h3>
         <div class="mt-1 text-[12px] tracking-[0.14em] uppercase text-volt">KNS Institute of Technology · Bengaluru</div>
-        <div class="mt-3 inline-flex items-center gap-3 border hairline px-3 py-2 text-[12px]">
-          <span class="text-ash tracking-[0.18em] uppercase text-[10px]">CGPA</span>
-          <span class="font-serif text-xl text-bone">8.34</span>
-          <span class="text-ash">/ 10.0</span>
-        </div>
+        <div class="mt-3 inline-flex items-center gap-3 border hairline px-3 py-2 text-[12px]"><span class="text-ash tracking-[0.18em] uppercase text-[10px]">CGPA</span><span class="font-serif text-xl text-bone">8.34</span><span class="text-ash">/ 10.0</span></div>
         <div class="mt-6 text-[10px] tracking-[0.24em] uppercase text-ash">Relevant Coursework</div>
         <ul class="mt-3 flex flex-wrap gap-2 text-[11px] tracking-[0.16em] uppercase">
-          <li class="border hairline px-3 py-1.5 text-bone">Data Structures &amp; Algorithms</li>
-          <li class="border hairline px-3 py-1.5 text-bone">Deep Learning</li>
-          <li class="border hairline px-3 py-1.5 text-bone">Natural Language Processing</li>
-          <li class="border hairline px-3 py-1.5 text-bone">Database Management</li>
+          <li class="border hairline px-3 py-1.5 text-bone">Data Structures &amp; Algorithms</li><li class="border hairline px-3 py-1.5 text-bone">Deep Learning</li><li class="border hairline px-3 py-1.5 text-bone">Natural Language Processing</li><li class="border hairline px-3 py-1.5 text-bone">Database Management</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section id="credentials" class="py-24 md:py-32 border-t hairline">
-  <div class="grid grid-cols-12 gap-4 md:gap-8 mb-16 reveal">
-    <div class="col-span-12 md:col-span-4">
-      <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-6">07 / Signal</div>
-      <h2 class="font-serif text-5xl md:text-6xl leading-[0.95] text-bone">Awards <span class="italic">&amp;</span> credentials.</h2>
-    </div>
-    <div class="col-span-12 md:col-span-8 md:pl-12 md:border-l hairline text-[13px] text-smoke max-w-2xl">
-      <p>External validation, in date order. Certifications are the receipts — the projects above are the show.</p>
-    </div>
+<section id="credentials" class="py-20 md:py-32 border-t hairline">
+  <div class="grid grid-cols-12 gap-4 md:gap-8 mb-12 md:mb-16 reveal">
+    <div class="col-span-12 md:col-span-4"><div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-6">07 / Signal</div><h2 class="font-serif text-4xl md:text-6xl leading-[0.95] text-bone">Awards <span class="italic">&amp;</span> credentials.</h2></div>
+    <div class="col-span-12 md:col-span-8 md:pl-12 md:border-l hairline text-[13px] text-smoke max-w-2xl"><p>External validation, in date order. Certifications are the receipts — the projects above are the show.</p></div>
   </div>
-
-  <div class="border hairline p-6 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16 reveal">
-    <div class="flex items-start gap-6">
+  <div class="border hairline p-5 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 md:mb-16 reveal">
+    <div class="flex items-start gap-5 md:gap-6">
       <div class="font-serif text-6xl md:text-7xl text-volt leading-none">★</div>
-      <div>
-        <div class="text-[11px] tracking-[0.24em] uppercase text-volt">Best Paper Award</div>
-        <h3 class="mt-2 font-serif text-3xl md:text-4xl text-bone">Intelligent Research Assistant with Mastra AI</h3>
-        <p class="mt-2 text-smoke text-[13.5px]">Awarded at the KNSIT Project Symposium.</p>
-      </div>
+      <div><div class="text-[11px] tracking-[0.24em] uppercase text-volt">Best Paper Award</div>
+        <h3 class="mt-2 font-serif text-2xl md:text-4xl text-bone">Intelligent Research Assistant with Mastra AI</h3>
+        <p class="mt-2 text-smoke text-[13.5px]">Awarded at the KNSIT Project Symposium.</p></div>
     </div>
     <a href="#work" class="inline-flex items-center gap-3 border hairline hover:border-volt hover:text-volt px-5 py-3 text-[11px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link">See the project →</a>
   </div>
-
   <div class="reveal">
     <div class="text-[10px] tracking-[0.24em] uppercase text-ash mb-4">Certifications · 05</div>
     <ul class="divide-y hairline border-t border-b hairline">
-      <li class="cert-item flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-2xl md:text-3xl text-bone">Introduction to Machine Learning</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">NPTEL · IIT Madras</div></li>
-      <li class="cert-item flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-2xl md:text-3xl text-bone">Cloud Computing</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">NPTEL · IIT Kharagpur</div></li>
-      <li class="cert-item flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-2xl md:text-3xl text-bone">AI: Search Methods for Problem Solving</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">VTU CoE · IIT Madras</div></li>
-      <li class="cert-item flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-2xl md:text-3xl text-bone">Data Analytics with Python</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">VTU Centre for Online Education</div></li>
-      <li class="cert-item flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-2xl md:text-3xl text-bone">GPU Architectures and Programming</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">VTU Centre for Online Education</div></li>
+      <li class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-xl md:text-3xl text-bone">Introduction to Machine Learning</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">NPTEL · IIT Madras</div></li>
+      <li class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-xl md:text-3xl text-bone">Cloud Computing</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">NPTEL · IIT Kharagpur</div></li>
+      <li class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-xl md:text-3xl text-bone">AI: Search Methods for Problem Solving</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">VTU CoE · IIT Madras</div></li>
+      <li class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-xl md:text-3xl text-bone">Data Analytics with Python</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">VTU Centre for Online Education</div></li>
+      <li class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-5 skill-row"><div class="font-serif text-xl md:text-3xl text-bone">GPU Architectures and Programming</div><div class="text-[11px] tracking-[0.22em] uppercase text-smoke">VTU Centre for Online Education</div></li>
     </ul>
   </div>
 </section>
 
-<section id="contact" class="py-24 md:py-40 border-t hairline">
+<section id="contact" class="py-20 md:py-40 border-t hairline">
   <div class="grid grid-cols-12 gap-4 md:gap-8">
     <div class="col-span-12 md:col-span-7 reveal">
       <div class="text-[11px] tracking-[0.24em] uppercase text-volt mb-6">08 / Contact</div>
-      <h2 class="font-serif text-6xl md:text-8xl leading-[0.9] text-bone">Let's build <span class="italic">something.</span></h2>
-      <p class="mt-8 text-smoke text-[14px] max-w-lg">Open to <span class="text-bone">graduate roles</span> and <span class="text-bone">internships</span> in AI/ML, Full-Stack, and Android. Based in Bengaluru, ready to relocate or work remote across timezones.</p>
+      <h2 class="font-serif text-5xl md:text-8xl leading-[0.9] text-bone">Let's build <span class="italic">something.</span></h2>
+      <p class="mt-6 md:mt-8 text-smoke text-[14px] max-w-lg">Open to <span class="text-bone">graduate roles</span> and <span class="text-bone">internships</span> in AI/ML, Full-Stack, and Android. Based in Bengaluru, ready to relocate or work remote across timezones.</p>
 
-      <div class="mt-12 grid sm:grid-cols-2 gap-px bg-hairline border hairline max-w-2xl">
-        <a href="mailto:mohtashimjamal009@gmail.com" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">Email</div><div class="mt-2 font-serif text-xl md:text-2xl break-all">mohtashimjamal009@gmail.com</div></a>
-        <a href="tel:+919916191965" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">Phone</div><div class="mt-2 font-serif text-xl md:text-2xl">+91 · 9916 191 965</div></a>
-        <a href="https://linkedin.com/in/mohtashimjamal009" target="_blank" rel="noopener" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">LinkedIn</div><div class="mt-2 font-serif text-xl md:text-2xl">/in/mohtashimjamal009 ↗</div></a>
-        <a href="https://github.com/mohtashim009" target="_blank" rel="noopener" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">GitHub</div><div class="mt-2 font-serif text-xl md:text-2xl">/mohtashim009 ↗</div></a>
+      <div class="mt-10 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-px bg-hairline border hairline max-w-2xl">
+        <a href="mailto:mohtashimjamal009@gmail.com" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">Email</div><div class="mt-2 font-serif text-lg md:text-2xl break-all">mohtashimjamal009@gmail.com</div></a>
+        <a href="tel:+919916191965" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">Phone</div><div class="mt-2 font-serif text-lg md:text-2xl">+91 · 9916 191 965</div></a>
+        <a href="https://linkedin.com/in/mohtashimjamal009" target="_blank" rel="noopener" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">LinkedIn</div><div class="mt-2 font-serif text-lg md:text-2xl">/in/mohtashimjamal009 ↗</div></a>
+        <a href="https://github.com/mohtashim009" target="_blank" rel="noopener" class="bg-archival p-5 hover:bg-volt hover:text-black transition-colors group" data-cursor="link"><div class="text-[10px] tracking-[0.24em] uppercase text-ash group-hover:text-black/70">GitHub</div><div class="mt-2 font-serif text-lg md:text-2xl">/mohtashim009 ↗</div></a>
+        <div class="bg-archival p-5"><div class="text-[10px] tracking-[0.24em] uppercase text-ash">Location</div><div class="mt-2 font-serif text-lg md:text-2xl text-bone">Bengaluru, India</div></div>
+        <div class="bg-archival p-5"><div class="text-[10px] tracking-[0.24em] uppercase text-ash">Availability</div><div class="mt-2 font-serif text-lg md:text-2xl text-volt">Immediately</div></div>
       </div>
     </div>
 
-    <aside id="contact-cta" class="col-span-12 md:col-span-5 md:pl-12 reveal">
-      <div class="border hairline p-6 md:p-8 sticky top-28">
+    <aside id="contact-cta" class="col-span-12 md:col-span-5 md:pl-12 reveal mt-10 md:mt-0">
+      <div class="border hairline p-5 md:p-8 md:sticky md:top-28">
         <div class="text-[10px] tracking-[0.24em] uppercase text-ash">Résumé Kit</div>
         <p class="mt-4 text-smoke text-[13.5px] leading-relaxed">Grab the full CV, or print a one-pager formatted for A4 — perfect for a coffee-chat handoff.</p>
         <div class="mt-6 flex flex-col gap-3">
-          <a href="resume.pdf" download class="inline-flex items-center justify-between gap-4 bg-volt text-black px-5 py-4 text-[12px] tracking-[0.22em] uppercase hover:bg-voltDim transition-colors" data-cursor="link"><span>Download résumé (PDF)</span> <span aria-hidden="true">↓</span></a>
-          <button onclick="window.print()" class="inline-flex items-center justify-between gap-4 border hairline hover:border-volt hover:text-volt px-5 py-4 text-[12px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link"><span>Print one-pager</span> <span aria-hidden="true">⎙</span></button>
-          <a href="mailto:mohtashimjamal009@gmail.com?subject=Opportunity%20for%20K%20Mohtashim%20Jamal" class="inline-flex items-center justify-between gap-4 border hairline hover:border-volt hover:text-volt px-5 py-4 text-[12px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link"><span>Start a conversation</span> <span aria-hidden="true">→</span></a>
+          <a href="resume.pdf" download class="inline-flex items-center justify-between gap-4 bg-volt text-black px-5 py-4 text-[11px] md:text-[12px] tracking-[0.22em] uppercase hover:bg-voltDim transition-colors" data-cursor="link"><span>Download résumé (PDF)</span><span aria-hidden="true">↓</span></a>
+          <button onclick="window.print()" class="inline-flex items-center justify-between gap-4 border hairline hover:border-volt hover:text-volt px-5 py-4 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link"><span>Print one-pager</span><span aria-hidden="true">⎙</span></button>
+          <a href="mailto:mohtashimjamal009@gmail.com?subject=Opportunity%20for%20K%20Mohtashim%20Jamal" class="inline-flex items-center justify-between gap-4 border hairline hover:border-volt hover:text-volt px-5 py-4 text-[11px] md:text-[12px] tracking-[0.22em] uppercase text-bone transition-colors" data-cursor="link"><span>Start a conversation</span><span aria-hidden="true">→</span></a>
         </div>
         <div class="mt-8 text-[10px] tracking-[0.22em] uppercase text-ash">Response time · &lt; 24h</div>
       </div>
@@ -540,32 +452,29 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
     <h1 class="print-h1">K Mohtashim Jamal</h1>
     <div class="print-sub">AI / ML Engineer · Full-Stack · Android · Bengaluru, IN</div>
     <div class="print-sub">mohtashimjamal009@gmail.com · +91 9916191965 · linkedin.com/in/mohtashimjamal009 · github.com/mohtashim009</div>
-
     <div class="print-section-label">Summary</div>
-    <div>AI &amp; ML Engineer and Full-Stack Developer with internship experience shipping production-grade applications across Generative AI, Computer Vision and web/mobile. Builds agentic GenAI pipelines (Gemini, Mastra AI) integrated with React/Next.js and Flask, plus native Android (Kotlin, Jetpack Compose).</div>
-
+    <div>AI &amp; ML Engineer and Full-Stack Developer with internship experience shipping production-grade applications across Generative AI, Computer Vision and web/mobile. Builds agentic GenAI pipelines (Gemini, Mastra AI) with React/Next.js and Flask, plus native Android (Kotlin, Jetpack Compose).</div>
     <div class="print-section-label">Experience</div>
     <div class="print-role">Android Developer Intern · MindMatrix / VTU Virtual Internship <span class="print-meta">— Feb 2026 – May 2026</span></div>
     <ul class="print-list">
       <li>Architected KreedaPrerana, a native Android app (Kotlin, Jetpack Compose, MVVM) for sports talent scouting.</li>
-      <li>Designed an offline-first Room data layer with Hilt DI and cascading foreign keys across athletes, trials, benchmarks, badges.</li>
-      <li>Built a batch trial-entry workflow with a custom nanosecond-precision chronometer and rule-based badge engine.</li>
-      <li>Shipped dynamic leaderboards &amp; trend visualisations (MPAndroidChart, Kotlin Flow) with a pluggable Gemini insights adapter. Rated "Excellent".</li>
+      <li>Offline-first Room data layer with Hilt DI and cascading FKs across athletes, trials, benchmarks, badges.</li>
+      <li>Batch trial-entry workflow with a custom nanosecond-precision chronometer and rule-based badge engine.</li>
+      <li>Dynamic leaderboards &amp; trend visualisations (MPAndroidChart, Kotlin Flow); pluggable Gemini insights adapter. Rated "Excellent".</li>
     </ul>
-
     <div class="print-section-label">Selected Projects</div>
     <div class="print-role">Intelligent Research Assistant with Mastra AI <span class="print-meta">— Best Paper Award, KNSIT Symposium</span></div>
     <ul class="print-list">
       <li>Built the Next.js/TypeScript frontend; led agent orchestration using the Mastra AI framework.</li>
       <li>Search-integration layer connecting Perplexity AI (web) and SerpAPI (Google Scholar).</li>
       <li>Co-built Gemini summarisation pipeline + TF-IDF ranking for article normalisation.</li>
-      <li>Stack: Next.js, TypeScript, Mastra AI, Perplexity, SerpAPI, Gemini, TF-IDF.</li>
+      <li>Repo: github.com/mohtashim009/Intelligent-Research-Assistant · Stack: Next.js, TypeScript, Mastra AI, Perplexity, SerpAPI, Gemini, TF-IDF.</li>
     </ul>
-
+    <div class="print-role">KreedaPrerana — AI-Assisted Sports Talent Scouting App</div>
+    <ul class="print-list"><li>Repo: github.com/mohtashim009/KreedaPreranaScout</li></ul>
     <div class="print-section-label">Education</div>
     <div class="print-role">B.E., Artificial Intelligence &amp; Machine Learning — KNS Institute of Technology, Bengaluru <span class="print-meta">2022 – 2026 · CGPA 8.34/10.0</span></div>
     <div class="print-meta">Relevant Coursework: DSA, Deep Learning, Natural Language Processing, Database Management Systems.</div>
-
     <div class="print-section-label">Technical Skills</div>
     <ul class="print-list">
       <li><b>Languages:</b> Python, Kotlin, TypeScript, JavaScript, HTML</li>
@@ -574,7 +483,6 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
       <li><b>Mobile:</b> Jetpack Compose, MVVM, Room, Hilt, Coroutines &amp; Flow</li>
       <li><b>Tools:</b> Git, GitHub, Vercel, Docker (basic), Android Studio, MPAndroidChart</li>
     </ul>
-
     <div class="print-section-label">Certifications &amp; Awards</div>
     <ul class="print-list">
       <li>Best Paper Award — KNSIT Symposium (Intelligent Research Assistant with Mastra AI)</li>
@@ -590,10 +498,13 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
 </main>
 
 <footer class="border-t hairline no-print">
-  <div class="max-w-[90rem] mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] tracking-[0.22em] uppercase text-ash">
+  <div class="max-w-[90rem] mx-auto px-5 md:px-12 py-8 md:py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-ash">
     <div>© 2026 · K Mohtashim Jamal · Portfolio № 001</div>
-    <div class="flex items-center gap-4">
-      <span>Hand-coded in Bengaluru</span>
+    <div class="flex flex-wrap items-center gap-3 md:gap-4">
+      <span>Built with</span>
+      <span class="text-bone">HTML</span><span class="text-volt">·</span>
+      <span class="text-bone">Tailwind</span><span class="text-volt">·</span>
+      <span class="text-bone">GitHub Pages</span>
       <span class="text-volt">●</span>
       <a href="#top" class="hover:text-volt" data-cursor="link">Back to top ↑</a>
     </div>
@@ -602,37 +513,25 @@ ai.insights     = <span class="text-volt">pluggable Gemini adapter</span>
 
 <script>
   (function(){
-    var cursor = document.getElementById('cursor');
-    if (!cursor) return;
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) { cursor.style.display = 'none'; return; }
-    var x = window.innerWidth/2, y = window.innerHeight/2;
-    var tx = x, ty = y;
-    window.addEventListener('mousemove', function(e){ tx = e.clientX; ty = e.clientY; });
-    function raf(){
-      x += (tx - x) * 0.35; y += (ty - y) * 0.35;
-      cursor.style.transform = 'translate(' + x + 'px,' + y + 'px) translate(-50%,-50%)' + (cursor.classList.contains('expand') ? ' scale(3.2)' : '');
+    var cursor = document.getElementById('cursor'); if (!cursor) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.matchMedia('(hover: none)').matches){ cursor.style.display='none'; return; }
+    var x=innerWidth/2,y=innerHeight/2,tx=x,ty=y;
+    addEventListener('mousemove',function(e){ tx=e.clientX; ty=e.clientY; });
+    (function raf(){ x+=(tx-x)*0.35; y+=(ty-y)*0.35;
+      cursor.style.transform='translate('+x+'px,'+y+'px) translate(-50%,-50%)'+(cursor.classList.contains('expand')?' scale(3.2)':'');
       requestAnimationFrame(raf);
-    }
-    raf();
-    var hoverables = document.querySelectorAll('a, button, [data-cursor="link"]');
-    hoverables.forEach(function(el){
-      el.addEventListener('mouseenter', function(){ cursor.classList.add('expand'); });
-      el.addEventListener('mouseleave', function(){ cursor.classList.remove('expand'); });
+    })();
+    document.querySelectorAll('a, button, [data-cursor="link"]').forEach(function(el){
+      el.addEventListener('mouseenter',function(){ cursor.classList.add('expand'); });
+      el.addEventListener('mouseleave',function(){ cursor.classList.remove('expand'); });
     });
   })();
-
   (function(){
-    var els = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); return; }
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+    var io=new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
     els.forEach(function(el){ io.observe(el); });
   })();
 </script>
-
 </body>
 </html>
